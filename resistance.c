@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h
 
 
 //A resistor is a circuit device designed to have a specific resistance value between its ends. 
