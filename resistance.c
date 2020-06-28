@@ -50,7 +50,15 @@ void value(){
     	printf("%d%d x 10^%d ohms",array[2],array[1],array[0]);
 	}
     
-   
+   printf("\nDo you want to decode another resistor(y or n)?");
+   char x;
+   scanf(" %c",&x);
+   if(x=='y'){
+   	value();
+   }
+   else if(x=='n'){
+   	 exit(1);
+   }
 
 
 
@@ -62,15 +70,7 @@ int main(){
   
    value();
     
-   printf("\nDo you want to decode another resistor(y or n)?");
-   char x;
-   scanf(" %c",&x);
-   if(x=='y'){
-   	value();
-   }
-   else if(x=='n'){
-   	 exit(1);
-   }
+  
 	
 	
 	return 0;
